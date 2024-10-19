@@ -1,0 +1,108 @@
+@import "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+@import "https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap";
+
+:root {
+  --color-brand--1: #ffb545;
+  --color-brand--2: #00c46a;
+
+  --color-dark--0: #242a2e;
+  --color-dark--1: #2d3439;
+  --color-dark--2: #42484d;
+  --color-light--1: #aaa;
+  --color-light--2: #ececec;
+  --color-light--3: #d6dee0;
+}
+
+.Toastify__toast-body > div:last-child {
+  font-size: 1.3rem;
+}
+.Toastify__toast-theme--dark {
+  background-color: rgba(40, 40, 40, 0.9);
+  backdrop-filter: blur(15px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: var(--color-light--2);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+i {
+  margin: 0 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem 1.2rem 0.8rem 0.1rem;
+  margin: 0.5rem 0;
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: none;
+  background: none;
+  transition: all 0.2s;
+  border-bottom: 2px solid var(--color-brand--2);
+  color: var(--color-light--2);
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 5px solid var(--color-brand--2);
+}
+
+.cta:link,
+.cta:visited {
+  display: inline-block;
+  background-color: var(--color-brand--2);
+  color: var(--color-dark--1);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+}
+
+.form-header {
+  background-color: var(--color-dark--2);
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-content: center;
+}
+.form-header a {
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-light--1);
+  font-weight: 600;
+  padding: 1rem;
+}
+.form-header .active {
+  background-color: var(--color-brand--2);
+
+  color: var(--color-dark--0);
+  font-weight: 600;
+}
+
+/*
+"importCSSModule": {
+    "prefix": "csm",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["import styles from './${TM_FILENAME_BASE}.module.css'"],
+    "description": "Import CSS Module as `styles`"
+  },
+*/
